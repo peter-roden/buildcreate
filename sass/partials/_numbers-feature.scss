@@ -1,0 +1,138 @@
+.numbers-feature {
+	
+	.counters {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 60px;
+		padding: 60px 0;
+		
+		.number {
+			position: relative;
+			text-align: center;
+			font-family: 'Surveyor Bold';
+			font-size: 50px;
+			position: relative;
+			
+			&:after {
+				content: "";
+				position: absolute;
+				width: 2px;
+				height: 50px;
+				top: 60px;
+				left: 50%;
+				display: block;
+			}
+			
+		}
+		
+		.label {
+			padding: 60px 0 0 0;
+			text-align: center;
+			font-family: 'Gotham Bold';
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+		
+	}
+		
+}
+
+.numbers-feature-blue-stone {
+	background-color: $blue-stone;
+}
+.numbers-feature-caribbean-green {
+	background-color: $caribbean-green;
+}
+.numbers-feature-gondola {
+	background-color: $gondola;
+}
+.numbers-feature-fern {
+	background-color: $fern;
+}
+.numbers-feature-mint {
+	background-color: $mint;
+}
+.numbers-feature-pale-green {
+	background-color: $pale-green;
+}
+.numbers-feature-iris {
+	background-color: $iris;
+}
+.numbers-feature-mindaro {
+	background-color: $mindaro;
+}
+.numbers-feature-catskill {
+	background-color: $catskill;
+}
+.numbers-feature-white {
+	background-color: $white;
+}
+
+.numbers-feature-blue-stone,
+.numbers-feature-caribbean-green,
+.numbers-feature-gondola,
+.numbers-feature-fern  {
+	
+	.number {
+		color: $white;
+		
+		&:after {
+			background-color: $white;
+		}
+		
+	}
+	
+	.label {
+		color: $black;
+	}
+	
+}
+
+.numbers-feature-mint, 
+.numbers-feature-pale-green,
+.numbers-feature-iris, 
+.numbers-feature-mindaro,
+.numbers-feature-catskill, 
+.numbers-feature-white {
+	
+	.number {
+		color: $fern;
+		
+		&:after {
+			background-color: $fern;
+		}
+		
+	}
+	
+	.label {
+		color: $black;
+	}
+	
+}
+
+
+@media only screen and ( max-width: 800px ) {
+	.numbers-feature {
+		
+		.counters {
+			grid-template-columns: 1fr;
+			
+			.number {
+				font-size: 40px;
+				
+				&:after {
+					height: 40px;
+					top: 55px;
+				}
+				
+			}
+			
+			.label {
+				padding: 40px 0 0 0;
+			}
+			
+		}
+			
+	}
+
+}

@@ -1,0 +1,248 @@
+
+.case-study {
+	
+   .case-study-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+			"left right";
+		align-items: center;
+		row-gap: 20px;
+		position: relative;
+		padding: 30px 0;
+		
+		.left {
+			grid-area: left;
+			padding: 0 50px 0 0;
+			
+			.left-container {				
+				display: flex;
+				gap: 30px;
+				align-items: center;
+				justify-content: center;
+				
+				.thumbnail {
+					img {
+						max-width: 200px;
+						height: auto;
+						border-radius: 10px;
+					}
+				}
+				
+				.headline {
+					font-family: 'Gotham Book';
+					font-size: 13px;
+					text-transform: uppercase;
+					padding: 0 0 10px 0;
+				}
+				
+				.text {
+					p {
+						font-family: 'Surveyor Bold';
+						font-size: 30px;
+						line-height: 1.1em;
+					}
+				}
+				
+			}
+			
+		}
+		
+		.right {
+			grid-area: right;
+			border-left: 1px solid $silver;
+			padding: 0 0 0 50px;
+			
+			.intro {
+				p {
+					font-family: 'Gotham Book';
+					font-size: 20px;
+				}
+			}
+			
+			.confirmation {
+				font-size: 20px;
+			}
+			
+			form {
+				.gform_footer {
+					justify-content: flex-end;
+					input[type="submit"] {
+						float: right;
+						padding: 10px 15%;
+					}
+				}
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+.case-study-blue-stone {
+	background-color: $blue-stone;
+}
+.case-study-caribbean-green {
+	background-color: $caribbean-green;
+}
+.case-study-gondola {
+	background-color: $gondola;
+}
+.case-study-fern {
+	background-color: $fern;
+}
+.case-study-mint {
+	background-color: $mint;
+}
+.case-study-pale-green {
+	background-color: $pale-green;
+}
+.case-study-iris {
+	background-color: $iris;
+}
+.case-study-mindaro {
+	background-color: $mindaro;
+}
+.case-study-catskill {
+	background-color: $catskill;
+}
+.case-study-white {
+	background-color: $white;
+}
+
+
+.case-study-blue-stone,
+.case-study-caribbean-green,
+.case-study-gondola,
+.case-study-fern {
+	
+	.case-study-content {
+			
+		.headline {
+			color: $mindaro;
+		}
+		
+		.text {
+			color: $white;
+		}
+		
+		.intro {
+			color: $pale-green;
+		}
+		
+		.confirmation {
+			color: $pale-green;
+			
+			a {
+				color: $white;
+				
+				&:hover {
+					color: $pale-green;
+					transition-duration: 300ms;
+				}
+			}
+		}
+		
+	}
+	
+}
+
+.case-study-mint, 
+.case-study-pale-green,
+.case-study-iris, 
+.case-study-mindaro,
+.case-study-catskill, 
+.case-study-white {
+	
+	.case-study-content {
+			
+		.headline {
+			color: $blue-stone;
+		}
+		
+		.text {
+			color: $black;
+		}
+		
+		.intro {
+			color: $caribbean-green;
+		}
+	
+		.confirmation {
+			color: $caribbean-green;
+
+			a {
+				color: $black;
+				
+				&:hover {
+					color: $caribbean-green;
+					transition-duration: 300ms;
+				}
+			}
+		}
+		
+	}
+	
+}
+
+@media only screen and ( max-width: 1024px ) {
+	.case-study {
+		
+		.case-study-content  {
+			grid-template-columns: 1fr;
+			grid-template-areas: 
+				"left" 
+				"right";
+			position: relative;
+			
+			.left {
+				grid-area: left;
+				padding: 0;
+				
+				.left-container {				
+					display: grid;
+					grid-template-columns: 2fr 3fr;
+					align-items: center;
+					justify-content: center;
+					
+					.thumbnail {
+						img {
+							display: block;
+							width: 100%;
+							height: auto;
+						}
+					}
+					
+					.text {
+						p {
+							font-size: 22px;
+						}
+					}
+				}
+				
+			}
+			
+			.right {
+				grid-area: right;
+				border-left: none;
+				padding: 0;
+				
+				form {
+					.gform_footer {
+						justify-content: flex-end;
+						input[type="submit"] {
+							float: right;
+							padding: 10px 15%;
+						}
+					}
+				}
+				
+			}
+				
+		}
+		
+	}	
+}

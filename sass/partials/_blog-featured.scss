@@ -1,0 +1,144 @@
+.blog-featured {
+	background-color: $black;
+	height: 100%;
+		
+	.wrapper {
+		.content {
+			padding: 100px; 
+			.brain {
+				font-family: 'Gotham Condensed Book';
+				font-size: 21px;
+				color: $mindaro;
+				padding: 0 0 60px 0;
+				
+				i {
+					padding: 0 10px 0 0;
+				}
+			}
+			
+			.title {
+				font-family: 'Surveyor Bold';
+				font-size: 50px;
+				color: $white;
+				line-height: 1.3em;
+				max-width: 800px;
+				
+				a {
+					color: $white;
+					
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+			
+			.author {
+				font-family: 'Surveyor Bold';
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				column-gap: 15px;
+				padding: 30px 0 0 0;
+				
+				.image {
+					img {
+						width: 100px;
+						height: 100px;
+						border-radius: 50%;
+					}
+					
+					&:hover {
+						opacity: .6;
+						transition-duration: 300ms;
+					}
+					
+				}	
+				
+				
+				.name-title {
+					
+					.name {
+						font-family: 'Gotham Bold';
+						font-size: 14px;
+						color: $white;
+						
+						&:hover {
+							text-decoration: underline;
+							transition-duration: 300ms;
+						}
+						
+						span {
+							text-transform: uppercase;
+						}
+					}
+					
+					.title {
+						font-family: 'Surveyor Medium Italic';
+						font-size: 13px;
+						color: $mindaro;
+					}
+					
+				}
+				
+				
+			}
+				
+			.meta {
+				display: flex;
+				justify-content: space-between;
+				column-gap: 30px;
+				padding: 60px 0 15px 0;
+				
+				.date {
+					font-family: 'Surveyor Book';
+					font-size: 14px;
+					color: $white;
+					text-transform: uppercase;
+				}
+				
+				.category {
+					font-family: 'Surveyor Book Bold';
+					font-size: 14px;
+					color: $white;
+					text-transform: uppercase;
+					
+					a {
+						color: $mindaro;
+						
+						&:hover {
+							color: $white;
+							transition-duration: 300ms;
+						}
+					}
+				}
+				
+			}
+						
+		}
+		
+	}
+	
+}
+
+@media only screen and ( max-width: 1100px ) {
+	.blog-featured {
+		
+		.wrapper {
+			
+			.content {
+				width: 100%;
+				padding: 40px 0;
+					
+				.title {
+					font-size: 30px;
+				}
+				
+				.meta {
+					justify-content: flex-start;
+				}
+				
+			}
+			
+		}		
+	}	
+}

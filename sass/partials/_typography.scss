@@ -1,0 +1,101 @@
+body {
+
+	color: $gondola;
+	font-family: $base;
+	font-size: $base-font-size;
+	margin: 0;
+	
+	h2 {
+		font-family: 'Gotham Bold';
+		font-size: 30px;
+		line-height: 36px;
+	}
+	
+	h3 {
+		font-family: 'Gotham Bold';
+		font-size: 24px;
+		line-height: 29px;
+	}
+	
+	h4 {
+		font-family: 'Surveyor Bold';
+		font-size: 20px;
+		line-height: 24px;
+		color: $blue-stone;
+	}
+	
+	p {
+		margin: 0;
+		padding: 0 0 1.1em 0;
+		
+	}
+
+	a {
+		color: $gondola;
+		text-decoration:none; 
+		cursor: pointer;
+		
+		&:hover {
+			color: $fern;
+			transition-duration: 300ms;
+		}
+		
+	}
+	
+	strong {
+		font-family: 'Survey Book Bold';
+	}
+	
+	ul {
+		padding: 0.5em 0 2em 1.5em;
+		
+		li {
+			list-style-type: none;
+			margin-bottom: 1em;
+			padding-left: 1.4em;
+			position: relative;
+			line-height: 1.2em;	
+		
+			&:before {
+				font-family: "Font Awesome 6 Pro"; 
+				font-weight: 400;
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: '\f111';
+				font-size: 0.5em;
+				color: $fern;
+			}
+		
+		}
+		
+	}
+	
+	ul.fa-ul {
+		padding: 0;
+		margin: 0 0 0 20px;
+		
+		li {
+			list-style-type: none;
+			margin-bottom: 0;
+			padding-left: 0;
+			position: relative;
+			line-height: auto;
+			padding: 5px 0;
+			
+			&:before {
+				display: none;
+			}
+		}
+		
+	}
+	
+	input {
+		border-width: 0px;
+		border-style: none;
+		border-color: transparent;
+		border-image: none;
+	}
+
+}
+

@@ -1,0 +1,229 @@
+
+.learn-more-row {
+	
+	.theme {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+			"left right";
+		align-items: center;
+		gap: 60px;
+		position: relative;
+		padding: 60px 0;
+		
+		.left {
+			grid-area: left;
+		}
+		
+		.right {
+			grid-area: right;
+		}
+		
+		.background-image {
+			img {
+				width: 100%;
+				height: auto;
+			}
+			.image-corners {
+				border-radius: 30px;
+			}
+		}
+		
+		.headline {
+			p {
+				font-family: 'Surveyor Bold';
+				font-size: 30px;
+				line-height: 1.1em;
+			}
+		}
+		
+		.text {
+			p {
+				font-family: 'Gotham Book';
+			}
+		}
+		
+		.button {
+			padding: 30px 0;
+			a {
+				font-family: "Gotham Bold";
+				letter-spacing: 1.5px;
+				padding: 15px 40px;
+				border: 1px solid $fern;
+				border-radius: 30px;
+				color: $fern;
+				text-transform: uppercase;
+				
+				i {
+					padding: 0 0 0 10px;
+				}
+				
+				&:hover {
+					background-color: $fern;
+					color: $white;
+					transition-duration: 300ms;
+				}
+			}
+		}
+		
+	}
+	
+}
+
+.learn-more-catskill {
+	background-color: $catskill;
+}
+.learn-more-white {
+	background-color: $white;
+}
+
+@media only screen and ( max-width: 800px ) {
+	.learn-more-row {
+		
+		.wrapper {
+			margin: 0;
+			max-width: 100%;
+			width: 100%;
+		
+			.theme {
+				grid-template-columns: 1fr;
+				align-items: start;
+				grid-template-areas: 
+					"image" 
+					"text";
+				position: relative;
+				gap: 20px;
+				padding: 20px 0;
+					
+				.image-location {
+					grid-area: image;
+					
+					.image-type  {
+						text-align: center;
+						img {
+							width: 100%;
+							height: auto;
+						}
+					}
+					
+					.image-corners {
+						border-radius: 0;
+					}
+					
+					
+				}
+				
+				.text-location{
+					grid-area: text;
+					padding: 0 50px;
+					
+					.headline {
+						p {
+							font-size: 30px;
+						}
+					}
+					
+					.button {
+						width: 100%;
+						text-align: center;
+						a {
+							display: block;
+							padding: 10px 30px;
+						}
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}	
+}
+
+@media only screen and ( max-width: 800px ) {
+	.industries {
+	
+		.learn-more-row {
+			
+			.wrapper {
+			
+				.theme {
+						
+					.background-image {
+						padding: 0 50px;
+						img {
+							border-radius: 20px;
+						}
+					}
+					
+					.button {
+						a {
+							padding: 12px 30px;
+						}
+					}
+
+				}
+				
+			}
+			
+		}
+		
+	}	
+	
+	.services {
+	
+		.learn-more-row {
+			
+			.wrapper {
+			
+				.theme {
+						
+					.background-image {
+						padding: 0 50px !important;
+					}
+					
+					.button {
+						a {
+							padding: 12px 30px !important;
+						}
+					}
+	
+				}
+				
+			}
+			
+		}
+		
+	}
+		
+	.careers {
+	
+		.learn-more-row {
+			
+			.wrapper {
+			
+				.theme {
+						
+					.background-image {
+						padding: 0 50px !important;
+						img {
+							border-radius: 30px;
+						}
+					}
+					
+					.button {
+						a {
+							padding: 12px 30px !important;
+						}
+					}
+	
+				}
+				
+			}
+			
+		}
+		
+	}
+}
+

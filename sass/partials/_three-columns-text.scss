@@ -1,0 +1,104 @@
+
+.three-columns-text {
+	background-color: $catskill;
+	
+	.wrapper {
+		
+		.theme {
+			padding: 60px 0;
+			
+			.headline {
+				text-align: center;
+				p {
+					font-family: 'Surveyor Bold';
+					font-size: 50px;
+					line-height: 1.1em;
+					color: $fern;
+				}
+
+			}
+			
+			.text {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+								
+				p {
+					text-align: center;
+					width: 47%;
+					font-family: 'Surveyor';
+					color: $black;
+				}
+
+			}
+
+			.columns {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				column-gap: 80px;
+				position: relative;
+				
+				.column {
+					padding: 30px 0 0 0;
+					
+					.column-headline {
+						font-family: 'Gotham Bold';
+						font-size: 20px;
+						color: $blue-stone;
+					}
+					
+					.column-text {
+						padding: 0 0 15px 0;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+@media only screen and ( max-width: 800px ) {
+	.three-columns-text {
+		
+		.wrapper {
+			.theme {
+								
+				.headline {
+					p {
+						font-size: 40px;
+					}
+				}
+				
+				.text {
+									
+					p {
+						width: 100%;
+					}
+				
+				}
+				
+				.columns {
+					grid-template-columns: 1fr;
+					padding: 20px 0 0 0;
+					
+					.column-headline {
+						text-align: center;
+						p {
+							padding: 0 0 10px 0;
+						}
+					}
+					
+					.column-text {
+						text-align: center;
+					}
+				}
+				
+			}
+		}
+		
+	}	
+}

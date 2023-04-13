@@ -1,0 +1,87 @@
+
+/********* GOTHAM CONDENSED *********/
+
+@font-face {
+	font-family: 'Gotham Condensed Black';
+	src: url('gothamcondssm-black-webfont.woff2') format('woff2'),
+		 url('gothamcondssm-black-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Condensed Black Italic';
+	src: url('gothamcondssm-blackitalic-webfont.woff2') format('woff2'),
+		 url('gothamcondssm-blackitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Condensed Bold';
+	src: url('gothamcondssm-bold-webfont.woff2') format('woff2'),
+		 url('gothamcondssm-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Condensed Bold Italic';
+	src: url('gothamcondssm-bolditalic-webfont.woff2') format('woff2'),
+		 url('gothamcondssm-bolditalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Condensed Book';
+	src: url('gothamcondssm-book-webfont.woff2') format('woff2'),
+		 url('gothamcondssm-book-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Condensed Book Italic';
+	src: url('gothamcondssm-bookitalic-webfont.woff2') format('woff2'),
+		 url('gothamcondssm-bookitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Condensed Light';
+	src: url('gothamcondssm-light-webfont.woff2') format('woff2'),
+		 url('gothamcondssm-light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Condensed Light Italic';
+	src: url('gothamcondssm-lightitalic-webfont.woff2') format('woff2'),
+		 url('gothamcondssm-lightitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Condensed Medium';
+	src: url('gothamcondssm-medium-webfont.woff2') format('woff2'),
+		 url('gothamcondssm-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Condensed Medium Italic';
+	src: url('gothamcondssm-mediumitalic-webfont.woff2') format('woff2'),
+		 url('gothamcondssm-mediumitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Condensed Extra Light';
+	src: url('gothamcondssm-xlight-webfont.woff2') format('woff2'),
+		 url('gothamcondssm-xlight-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Condensed Extra Light Italic';
+	src: url('gothamcondssm-xlightitalic-webfont.woff2') format('woff2'),
+		 url('gothamcondssm-xlightitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

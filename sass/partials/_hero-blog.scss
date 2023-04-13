@@ -1,0 +1,160 @@
+
+.hero-blog {
+	height: 60vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	position: relative;
+	
+	.hero-blog-category-branding {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: linear-gradient(275deg, rgba(7,186,166,0.7) 0%, rgba(7,186,166,0.7) 0%, rgba(7,186,166,0.7) 100%);
+	}
+	
+	.hero-blog-category-design {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		border-radius: 20px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: linear-gradient(275deg, rgba(87,183,80,0.7) 0%, rgba(87,183,80,0.7) 0%, rgba(87,183,80,0.7) 100%);
+	}
+	
+	.hero-blog-category-development {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		border-radius: 20px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: linear-gradient(275deg, rgba(1,93,83,.7) 0%, rgba(1,93,83,.7) 0%, rgba(1,93,83,.7) 100%);
+	}
+	
+	.hero-blog-category-digital-marketing {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		border-radius: 20px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: linear-gradient(275deg, rgba(90,153,129,0.7) 0%, rgba(90,153,129,0.7) 0%, rgba(90,153,129,0.7) 100%);
+	}
+		
+	.content {
+		padding: 20% 0 5% 0;
+		
+		.meta {
+			display: flex;
+			justify-content: flex-start;
+			column-gap: 30px;
+			padding: 0 0 15px 0;
+			
+			.date {
+				font-family: 'Gotham Book';
+				font-size: 14px;
+				color: $white;
+				text-transform: uppercase;
+			}
+			
+			.category {
+				
+				a {
+					font-family: 'Gotham Book';
+					font-size: 14px;
+					color: $white;
+					text-transform: uppercase;
+					color: $mindaro;
+					
+					&:hover {
+						color: $white;
+						transition-duration: 300ms;
+					}
+				}
+			}
+			
+		}
+		
+		.title {
+			font-family: 'Surveyor Bold';
+			font-size: 50px;
+			line-height: 1.1em;
+			color: $white;
+		}
+		
+		.author {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			column-gap: 15px;
+			padding: 60px 0 0 0;
+			
+			.image {
+				img {
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+				}
+				
+				&:hover {
+					opacity: .6;
+					transition-duration: 300ms;
+				}
+				
+			}	
+			
+			
+			.name-title {
+				
+				.name {
+					font-family: 'Gotham Bold';
+					font-size: 14px;
+					color: $white;
+					
+					&:hover {
+						text-decoration: underline;
+						transition-duration: 300ms;
+					}
+					
+					span {
+						text-transform: uppercase;
+					}
+				}
+				
+				.title {
+					font-family: 'Surveyor Book';
+					font-size: 13px;
+					color: $mint;
+				}
+				
+			}
+			
+			
+		}
+		
+	}
+	
+}
+
+@media only screen and ( max-width: 800px ) {
+	.hero-blog {
+		height: 70vh;
+		
+		.content {
+			padding: 35% 0 5% 0;
+			
+			.title {
+				font-size: 30px;
+			}
+		}
+		
+	}	
+}

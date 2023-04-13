@@ -1,0 +1,163 @@
+.hero-blog-index-get {
+	height: 40vh;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	background-color: $blue-stone;
+	
+	.browsing {
+		width: 100%;
+		text-align: center;
+		font-family: 'Gotham Book';
+		font-size: 40px;
+		color: $mindaro;
+		padding: 0 10% 10vh 10%;
+	}
+	
+}
+
+.hero-blog-index {
+	height: 70vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	position: relative;
+	
+	.wrapper {
+		top: 25%;
+		bottom: 25%;
+		
+		.content {
+			width: 66.66%;
+			
+			.brain {
+				font-family: 'Gotham Black';
+				font-size: 24px;
+				color: $white;
+				padding: 0 0 60px 0;
+				
+				i {
+					padding: 0 10px 0 0;
+				}
+			}
+				
+			.meta {
+				display: flex;
+				justify-content: flex-start;
+				column-gap: 30px;
+				padding: 0 0 15px 0;
+				
+				.date {
+					font-family: 'Gotham Bold';
+					font-size: 14px;
+					color: $white;
+					text-transform: uppercase;
+				}
+				
+				.category {
+					font-family: 'Gotham Book';
+					font-size: 14px;
+					color: $white;
+					text-transform: uppercase;
+					
+					a {
+						color: $mindaro;
+						
+						&:hover {
+							color: $white;
+							transition-duration: 300ms;
+						}
+					}
+				}
+				
+			}
+			
+			.title {
+				font-family: 'Surveyor Bold';
+				font-size: 50px;
+				line-height: 1.1em;
+				color: $white;
+			}
+			
+			.read-more {
+				padding: 60px 0 0 0;
+				
+				i {
+					color: $mindaro;
+					padding: 0 10px 0 0;
+				}
+				
+				a {
+					font-family: 'Gotham Bold';
+					font-size: 20px;
+					color: $mindaro;
+					
+					&:hover {
+						color: $white;
+						transition-duration: 300ms;
+					}
+				}
+	
+			}
+			
+		}
+		
+	}
+	
+	.hero-blog-index-overlay {
+		height: 70vh;
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: linear-gradient(275deg, rgba(52,52,52,0.7) 0%, rgba(52,52,52,0.7) 0%, rgba(52,52,52,0.7) 100%);
+	}
+		
+}
+
+
+
+
+@media only screen and ( max-width: 1400px ) {
+	
+	.hero-blog-index {
+		
+		.content {
+			padding: 0 60px;
+		}
+	}
+
+}
+
+@media only screen and ( max-width: 800px ) {
+	.hero-blog-index {
+		
+		.wrapper {
+			top: 15%;
+			bottom: 15%;
+			
+			.content {
+				width: 100%;
+				padding: 0 10px;
+				
+				.brain {
+					padding: 60px 0;
+				}
+					
+				.title {
+					font-size: 30px;
+				}
+				
+				.read-more {
+					font-size: 20px;
+					padding: 60px 0;
+					
+				}
+				
+			}
+			
+		}
+		
+	}	
+}

@@ -1,0 +1,429 @@
+
+.hero {
+	
+	.theme {
+		display: flex;
+		align-items: center;
+		padding: 15% 0 7.5% 0;
+		position: relative;
+		
+		.background-image-mobile {
+			display: none;
+		}
+		
+		.background-image {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+		
+		.content {
+			.post-title {
+				font-family: 'Gotham Book';
+				text-transform: uppercase;
+				font-size: 18px;
+				padding: 0 0 5px 0;
+			}
+			.headline {
+				max-width: 800px;
+				padding: 0 0 30px 0;
+				p {
+					font-family: 'Surveyor Bold';
+					font-size: 50px;
+					line-height: 1.1em;
+					padding: 0;
+				}
+			}
+			.intro {
+				max-width: 45%;
+				padding: 0 0 30px 0;
+				p {
+					font-family: 'Surveyor Bold';
+					font-size: 50px;
+					line-height: 1.1em;
+					padding: 0 0 18px 0;
+				}
+			}
+			.text {
+				max-width: 50%;
+				padding: 0 0 30px 0;
+				p {
+					font-family: 'Surveyor Book';
+					font-size: 18px;
+					padding: 0 0 18px 0;
+				}
+			}
+			.button {
+				padding: 60px 0;
+				a {
+					font-family: 'Gotham Condensed Bold';
+					font-size: 30px;
+					border-radius: 48px;
+					padding: 20px 80px;					
+				}
+			}
+		}
+		
+	}
+		
+	.theme-aero-blue {
+		background-color: $iris;
+		.post-title {
+			color: $caribbean-green;
+		}
+		.headline {
+			color: $black;
+		}
+		.text {
+			color: $black;
+		}
+		.intro {
+			color: $gondola;
+		}
+		.button {
+			a {
+				background-color: $white;
+				color: $fern;
+				text-transform: uppercase;
+				&:hover {
+					background-color: $caribbean-green;
+					color: $white;
+					transition-duration: 300ms;
+				}
+			}
+		}
+	}
+		
+	.theme-aquamarine {
+		background-color: $mint;
+		.post-title {
+			color: $caribbean-green;
+		}
+		.headline {
+			color: $black;
+		}
+		.text {
+			color: $black;
+		}
+		.intro {
+			color: $gondola;
+		}
+		.button {
+			a {
+				background-color: $white;
+				color: $fern;
+				text-transform: uppercase;
+				&:hover {
+					background-color: $caribbean-green;
+					color: $white;
+					transition-duration: 300ms;
+				}
+			}
+		}
+	}
+		
+	.theme-apple-green {
+		background-color: $fern;
+		.post-title {
+			color: $mint;
+		}
+		.headline {
+			color: $white;
+		}
+		.text {
+			color: $white;
+		}
+		.intro {
+			color: $white;
+		}
+		.button {
+			a {
+				background-color: $white;
+				color: $fern;
+				text-transform: uppercase;
+				&:hover {
+					background-color: $mint;
+					color: $white;
+				}
+			}
+		}
+	}
+		
+	.theme-bangladesh-green {
+		background-color: $blue-stone;
+		.post-title {
+			color: $pale-green;
+		}
+		.headline {
+			color: $white;
+		}
+		.text {
+			color: $white;
+		}
+		.intro {
+			color: $white;
+		}
+		.button {
+			a {
+				background-color: $white;
+				color: $fern;
+				text-transform: uppercase;
+				&:hover {
+					background-color: $pale-green;
+					color: $white;
+					transition-duration: 300ms;
+				}
+			}
+		}
+	}
+		
+	.theme-highlighter {
+		background-color: $mindaro;
+		.post-title {
+			color: $white;
+		}
+		.headline {
+			color: $black;
+		}
+		.text {
+			color: $black;
+		}
+		.intro {
+			color: $blue-stone;
+		}
+		.button {
+			a {
+				background-color: $white;
+				color: $fern;
+				text-transform: uppercase;
+				&:hover {
+					background-color: $fern;
+					color: $white;
+					transition-duration: 300ms;
+				}
+			}
+		}
+	}
+	
+	.theme-jet {
+		background-color: $gondola;
+		.post-title {
+			color: $mint;
+		}
+		.headline {
+			color: $mindaro;
+		}
+		.text {
+			color: $white;
+		}
+		.intro {
+			color: $white;
+		}
+		.button {
+			a {
+				background-color: $fern;
+				color: $white;
+				text-transform: uppercase;
+				&:hover {
+					background-color: $white;
+					color: $fern;
+					transition-duration: 300ms;
+				}
+			}
+		}
+	}
+	
+	.theme-light-grey {
+		background-color: $catskill;
+		.post-title {
+			color: $caribbean-green;
+		}
+		.headline {
+			color: $black;
+		}
+		.text {
+			color: $black;
+		}
+		.intro {
+			color: $blue-stone;
+		}
+		.button {
+			a {
+				background-color: $fern;
+				color: $white;
+				text-transform: uppercase;
+				&:hover {
+					background-color: $caribbean-green;
+					color: $white;
+					transition-duration: 300ms;
+				}
+			}
+		}
+	}
+	
+	.theme-magic-mint {
+		background-color: $pale-green;
+		.post-title {
+			color: $caribbean-green;
+		}
+		.headline {
+			color: $black;
+		}
+		.text {
+			color: $black;
+		}
+		.intro {
+			color: $gondola;
+		}
+		.button {
+			a {
+				background-color: $white;
+				color: $fern;
+				text-transform: uppercase;
+				&:hover {
+					background-color: $caribbean-green;
+					color: $white;
+					transition-duration: 300ms;
+				}
+			}
+		}
+	}
+	
+	.theme-tiffany-blue {
+		background-color: $caribbean-green;
+		.post-title {
+			color: $pale-green;
+		}
+		.headline {
+			color: $white;
+		}
+		.text {
+			color: $white;
+		}
+		.intro {
+			color: $gondola;
+		}
+		.button {
+			a {
+				background-color: $white;
+				color: $fern;
+				text-transform: uppercase;
+				&:hover {
+					background-color: $pale-green;
+					color: $white;
+					transition-duration: 300ms;
+				}
+			}
+		}
+	}
+	
+}
+
+.single-jobs {
+	
+	.hero {
+		
+		.theme {
+			height: 70vh;
+		}
+	}
+}
+
+@media only screen and ( max-width: 900px ) {
+	.hero {
+		
+		.theme {
+			display: flex;
+			height: 90vh;
+			width: 80%;
+			padding: 0 30px;
+			
+			.background-image-desktop {
+				display: none;
+			}
+			
+			.background-image-mobile {
+				display: block;
+			}
+			
+			.content {
+				padding: 120px 0 0 0;
+				.post-title {
+					max-width: 100%;
+					text-transform: uppercase;
+					font-size: 16px;
+				}
+				.headline {
+					max-width: 100%;
+					p {
+						font-size: 30px;
+					}
+				}
+				.intro {
+					max-width: 100%;
+					p {
+						font-size: 30px;
+					}
+				}
+				.text {
+					max-width: 100%;
+				}
+				.button {
+					text-align: center;
+					width: 100%;
+					padding: 0 0 60px 0;
+					a {
+						display: block;
+						width: 100%;
+						padding: 15px 0;				
+					}
+				}
+			}
+		}
+		
+	}
+	
+	.careers,
+	.single-jobs {
+		
+		.hero {
+			
+			.theme {
+				height: 50vh;
+			}
+		}
+	}
+	
+	.process {
+		.hero {
+			
+			.theme {
+				height: 120vh;
+			}
+		}
+	}
+	.industries {
+		.hero {
+			
+			.theme {
+				height: 70vh;
+			}
+		}
+	}		
+	.careers {
+		.hero {
+			
+			.theme {
+				height: 70vh;
+			}
+		}
+	}
+	.single-jobs {
+		.hero {
+			
+			.theme {
+				height: 70vh;
+			}
+		}
+	}		
+}

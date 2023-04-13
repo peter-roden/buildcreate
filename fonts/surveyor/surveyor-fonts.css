@@ -1,0 +1,73 @@
+
+/********* SURVEYOR *********/
+
+@font-face {
+	font-family: 'Surveyor Black';
+	src: url('surveyorssm-black-webfont.woff2') format('woff2'),
+		 url('surveyorssm-black-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Surveyor Black Italic';
+	src: url('surveyorssm-blackitalic-webfont.woff2') format('woff2'),
+		 url('surveyorssm-blackitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Surveyor Bold';
+	src: url('surveyorssm-bold-webfont.woff2') format('woff2'),
+		 url('surveyorssm-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Surveyor Bold Italic';
+	src: url('surveyorssm-bolditalic-webfont.woff2') format('woff2'),
+		 url('surveyorssm-bolditalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Surveyor Book';
+	src: url('surveyorssm-book-webfont.woff2') format('woff2'),
+		 url('surveyorssm-book-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Surveyor Book Italic';
+	src: url('surveyorssm-bookitalic-webfont.woff2') format('woff2'),
+		 url('surveyorssm-bookitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Surveyor Light';
+	src: url('surveyorssm-light-webfont.woff2') format('woff2'),
+		 url('surveyorssm-light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Surveyor Light Italic';
+	src: url('surveyorssm-lightitalic-webfont.woff2') format('woff2'),
+		 url('surveyorssm-lightitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Surveyor Medium';
+	src: url('surveyorssm-medium-webfont.woff2') format('woff2'),
+		 url('surveyorssm-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Surveyor Medium Italic';
+	src: url('surveyorssm-mediumitalic-webfont.woff2') format('woff2'),
+		 url('surveyorssm-mediumitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

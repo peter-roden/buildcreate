@@ -1,0 +1,72 @@
+.job-requirements-proficiencies {
+	padding: 60px 0;
+	background-color: $catskill;
+	
+	.job-requirements-proficiencies-container {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		
+		.heading {
+			font-family: 'Gotham';
+			font-size: 20px;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: $caribbean-green;
+			padding: 0 0 20px 0;	
+			
+			p {
+				padding: 0;
+			}
+			
+		}
+		
+		ul.fa-ul {
+			
+			li {
+				font-family: 'Gotham Light';
+				
+				i {
+					color: $fern;
+				}
+			}
+		}
+		
+		ul.requirements-ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			column-gap: 30px;
+		}				
+						
+	}
+}
+
+@media only screen and ( max-width: 1096px ) {
+	.job-requirements-proficiencies {
+		
+		.job-requirements-proficiencies-container {
+			grid-template-columns: 1fr;
+			padding: 0 10px;
+			
+			.heading {
+				font-family: 'Gotham';
+				font-size: 20px;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: $caribbean-green;
+				padding: 0 0 20px 0;	
+				
+				p {
+					padding: 0;
+				}
+			}
+							
+			ul.requirements-ul {
+				grid-template-columns: 1fr;
+			}	
+			
+			.proficiencies {
+				padding: 60px 0 0 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.industries {
+	
+	.industry-posts {		
+		.industry-post {
+			
+			.industry-index {
+				display: block;
+			}
+			
+		}
+	
+	}
+	
+}
+
+@media only screen and ( max-width: 960px ) {
+
+	.industries {
+		
+		.industry-posts {
+			.industry-post {
+				
+				.industry-index {
+					display: block;
+				}
+				
+			}
+	
+		}
+		
+	}
+
+}

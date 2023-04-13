@@ -1,0 +1,59 @@
+.show-jobs {
+	padding: 60px 0;
+	background-color: $blue-stone;
+	
+		
+	.heading {
+		font-family: 'Gotham Bold';
+		font-size: 30px;
+		text-transform: uppercase;
+		color: $white;
+		padding: 0 0 20px 0;	
+		
+		p {
+			padding: 0;
+		}
+	}
+
+	.jobs-container {
+		
+		ul.fa-ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			column-gap: 30px;
+			
+			li {
+				
+				i {
+					color: $fern;
+				}
+				
+				a {
+					font-family: 'Gotham Light';
+					color: $fern;
+					
+					&:hover {
+						text-decoration: underline;
+					}
+					
+				}
+			}
+		}
+		
+	}
+	
+}
+
+@media only screen and ( max-width: 1096px ) {
+	.show-jobs {
+
+		.jobs-container {
+		
+			ul.fa-ul {
+				grid-template-columns: 1fr;
+			}
+			
+		}
+
+	}
+}

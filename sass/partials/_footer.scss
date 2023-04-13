@@ -1,0 +1,217 @@
+footer {
+	background-color: $blue-stone;
+	padding: 60px;
+	
+	.footer-container {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-areas: 
+			"left right";
+		
+		.left {
+			display:flex;
+			flex-direction: column;
+			align-items:center;
+			justify-content:center;
+			text-align: center;
+			width: 100%;
+			grid-area: left;
+			.tagline {
+				padding: 10px 0 0 0;
+				p {
+					font-family: 'Gotham Bold';
+					font-size: 20px;
+					color: $white;
+					position: relative;
+					line-height: 30px;
+					
+					&:after {
+						width: 50px;
+						content: "";
+						position: absolute;
+						bottom: -15px;
+						left: 27px;
+						right: 0;
+						border-top: 3px solid $white;
+					}
+				}
+			}
+			.established {
+				padding: 25px 0 0 0;
+				p {
+					font-family: 'Surveyor Bold';
+					font-size: 20px;
+					color: $white;
+				}
+			}
+			.footer-contact {
+				padding: 60px 0 0 0;
+				.contact-item {
+					padding: 0 0 10px 0;
+					color: $caribbean-green;
+					font-family: 'Gotham Book';
+					font-size: 14px;
+					a {
+						font-family: 'Gotham Book';
+						font-size: 14px;
+						color: $caribbean-green;
+						&:hover {
+							color: $mindaro;
+							transition-duration: 300ms;
+						}
+					}
+				}
+			}
+			.social {
+				padding: 30px 0 0 20px;
+				a {
+					i {
+						font-size: 30px;
+						padding: 0 20px 0 0;
+						color: $mint;
+						&:hover {
+							color: $mindaro;
+							transition-duration: 300ms;
+						}
+					}
+				}
+			}
+		}
+		.right {
+			grid-area: right;
+			
+			.intro {
+				font-family: "Surveyor Bold";
+				font-size: 30px;
+				line-height: 1.2em;
+				color: $mindaro;
+				max-width: 900px;
+			}
+			.subscribe {
+				padding: 40px 0 0 0;
+				max-width: 1000px;
+			}
+			.link-groups {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 30px;
+				position: relative;
+				margin: 80px 0 0 0;
+				max-width: 1000px;
+				
+				&:before {
+					width: 100%;
+					content: "";
+					position: absolute;
+					top: -60px;
+					right: 0;
+					border-top: 2px solid $pale-green;
+				}
+				
+				.link-group {
+					display:flex;
+					flex-direction: column;
+				}
+				.primary {
+					a {
+						font-family: "Gotham Bold";
+						color: $pale-green;
+						padding: 0 0 15px 0;
+						text-transform: uppercase;
+						&:hover {
+							color: $mindaro;
+							transition-duration: 300ms;
+						}
+					}
+				}
+				.secondary {
+					.title {
+						font-family: "Gotham Bold";
+						color: $caribbean-green;
+						text-transform: uppercase;
+						padding: 0 0 15px 0;
+					}
+					a {
+						font-family: "Gotham Light";
+						color: $pale-green;
+						padding: 0 0 10px 0;
+						font-size: 14px;
+						&:hover {
+							color: $mindaro;
+							transition-duration: 300ms;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.copyright {
+	color: $caribbean-green;
+	font-size: 14px;
+	padding: 40px 0;
+}
+
+.single-post {
+	footer {
+		padding: 250px 60px 60px 60px;
+		margin: -160px 0 0 0;
+	}
+}
+
+@media only screen and ( max-width: 1096px ) {
+	footer {
+		padding: 60px 50px 0 50px;
+		.footer-container {
+			grid-template-columns: 1fr;
+			grid-template-areas: 
+				"right"
+				"left";
+			.left {
+				margin: 60px 0 0 0;
+			}
+			.right {
+				
+				.intro {
+					text-align:center;
+					p {
+						text-align: center;
+					}
+				}
+				.subscribe {
+					padding: 60px 0 0 0;
+					form {
+						.gform_fields {
+							grid-template-columns: 1fr;
+							row-gap: 30px;
+						}
+					}
+				}
+				.link-groups {
+					grid-template-columns: 1fr;
+					margin: 30px 0 0 0;
+					
+					&:before {
+						display: none;
+					}
+					
+					.link-group {
+						text-align: center;
+					}
+				}
+				.copyright {
+					text-align: center;
+				}
+			}
+		}
+	}
+	
+	.single-post {
+		footer {
+			padding: 60px 30px 0 30px;
+			margin: 0;
+		}
+	}
+	
+}

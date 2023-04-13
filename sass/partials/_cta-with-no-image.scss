@@ -1,0 +1,122 @@
+
+.cta-with-no-image {
+	
+	.wrapper {
+		
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 80px 20%;
+			
+			.headline {
+				padding: 0 0 10px 0;
+				p {
+					font-family: 'Gotham Bold';
+					font-size: 14px;
+					color: $fern;
+					text-transform: uppercase;
+				}
+			}
+			
+			.text {
+				text-align: center;
+				p {
+					font-family: 'Surveyor Bold';
+					font-size: 40px;
+					line-height: 1.1em;
+				}
+			}
+			
+			.button {
+				padding: 30px 0 0 0;
+				a {
+					font-family: 'Gotham COndensed Bold';
+					background-color: $fern;
+					font-size: 24px;
+					letter-spacing: 1.5px;
+					color: $white;
+					text-transform: uppercase;
+					border-radius: 48px;
+					padding: 20px 60px;
+					
+					&:hover {
+						background-color: $blue-stone;
+						color: $mindaro;
+						transition-duration: 300ms;
+					}
+				}
+			}
+			
+		}
+		
+	}
+	
+}
+
+.cta-with-no-image-theme-blue-stone {
+	background-color: $blue-stone;
+}
+.cta-with-no-image-theme-caribbean-green {
+	background-color: $caribbean-green;
+}
+.cta-with-no-image-theme-gondola {
+	background-color: $gondola;
+}
+.cta-with-no-image-theme-fern {
+	background-color: $fern;
+}
+.cta-with-no-image-theme-mint {
+	background-color: $mint;
+}
+.cta-with-no-image-theme-pale-green {
+	background-color: $pale-green;
+}
+.cta-with-no-image-theme-iris {
+	background-color: $iris;
+}
+.cta-with-no-image-theme-mindaro {
+	background-color: $mindaro;
+}
+.cta-with-no-image-theme-catskill {
+	background-color: $catskill;
+}
+.cta-with-no-image-theme-white {
+	background-color: $white;
+}
+
+@media only screen and ( max-width: 800px ) {
+	.cta-with-no-image {
+		.wrapper {
+		
+			.container {
+				padding: 80px 30px;
+				
+				.headline {
+					p {
+						font-size: 16px;
+					}
+				}
+				
+				.text {
+					font-size: 30px;
+				}
+				
+				.button {
+					width: 100%;
+					a {
+						display: block;
+						text-align: center;
+						width: 100%;
+						padding: 15px 0;
+						font-size: 20px;
+						font-weight: 700;
+					}
+				}
+				
+			}
+			
+		}
+	}
+}

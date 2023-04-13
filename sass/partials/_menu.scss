@@ -1,0 +1,316 @@
+nav {
+	
+	.menu-mobile {
+		display: none;
+	}
+	
+	.menu-desktop {
+		position: relative;
+		
+		.menu-desktop-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-content: center;
+			align-items: center;
+			background-color: transparent;
+			padding: 0 35px;
+			height: 100px;
+			width: 96%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 12;
+			
+			.logo {
+				display: flex;
+				align-items: center;
+				padding: 0 0 0 20px;
+				img {
+					height: 64px;
+					width: auto;
+				}
+				.logo-name {
+					font-family: "Gotham Extra Light";
+					font-size: 28px;
+					color: $blue-stone;
+					width: 300px;
+				}
+			}
+			
+			.top-links {
+				position: relative;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-content: center;
+				align-items: center;
+				height: 45px;
+				
+				.top-link {	
+					
+					a {
+						text-transform: uppercase;
+						padding: 30px;
+						border-top-left-radius: 10px;
+						border-top-right-radius: 10px;
+					}
+					
+					.megamenu-active {
+
+						&:hover {
+							background-color: $white;
+							border-top-left-radius: 10px;
+							border-top-right-radius: 10px;
+							color: $blue-stone;
+							transition-duration: 300ms;
+						}
+						&:focus {
+							background-color: $white;
+							border-top-left-radius: 10px;
+							border-top-right-radius: 10px;
+							color: $blue-stone;
+						}
+
+					}
+					
+					.megamenu-background-transparent {
+						background-color: transparent !important;
+					}
+				}
+				
+				.megamenu {
+					position: absolute;
+					top: 60px;
+					width: 90vw;
+					left: calc(-100vw + 100%);
+					margin: 0 35px 0 5vw;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-content: center;
+					align-items: center;
+					column-gap: 60px;
+					background-color: $white;
+					padding: 30px;
+					border-radius: 30px;
+					
+					.description {
+						width: 33%;
+						display: flex;
+						flex-direction: column;
+						row-gap: 20px;
+						
+						.headline {
+							font-family: "Surveyor Bold";
+							font-size: 40px;
+							line-height: 1.1em;
+							color: $fern;
+						}
+						
+						.text {
+							font-family: "Gotham Book";
+							font-size: 16px;
+							line-height: 1.1em;
+							color: $blue-stone;
+						}
+					}
+					
+					.megamenu-items {
+						width: 66.66%;
+						position: relative;
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						align-content: center;
+						align-items: center;
+						column-gap: 10px;
+						
+						.megamenu-item {
+							width: 30%;
+							height: 200px;
+							padding: 20px;
+							border-radius: 20px;
+							
+							.icon {
+								position: relative;
+								
+								.item-title {
+									font-weight: 700;
+									width: 66.6%;
+									padding: 30px 0 0 0;
+									text-transform: uppercase;
+								}
+								
+							}
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+@media only screen and ( max-width: 1096px ) {
+	nav {
+		z-index: 99999999 !important;
+		.menu-desktop {
+			display: none;
+		}
+		.menu-mobile {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+			position: relative;
+			z-index: 99999999;
+			.top-level {
+				width: 90%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				height: 76px; 
+				position: absolute;
+				top: 20px;
+				left: 5%;
+				z-index: 99999999;
+				.logo {
+					display: flex;
+					align-items: center;
+					padding: 0 0 0 20px;
+					img {
+						height: 64px;
+						width: auto;
+					}
+					.logo-name {
+						font-size: 24px;
+						font-weight: 400;
+						color: $blue-stone;
+					}
+				}
+				.open {
+					cursor: pointer;
+					padding: 0 20px 0 0;
+					color: $fern;
+					font-size: 40px;
+				}
+			}
+			
+			.menu-container {
+				width: 100%;
+				height: auto;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 99999999;
+				padding: 30px 0 0 0;
+				background-color: $blue-stone;
+				
+				.top-row {
+					text-align: center;
+					.close {
+						float: right;
+						cursor: pointer;
+						color: $white;
+						font-size: 40px;
+						z-index: 999999;
+						padding: 0 12% 0 0;
+					}
+					.column {
+						display:flex;
+						align-items:center;
+						justify-content:center;
+						text-align: center;
+						padding: 15px 0;
+						width: 100%;
+						.top-row-item {
+							a {
+								font-size: 18px;
+								text-transform: uppercase;
+								color: $pale-green;
+								
+								&:hover {
+									color: $fern;
+									transition-duration: 300ms;
+								}
+							}
+						}
+					}
+					.columns {
+						display:flex;
+						align-items:center;
+						justify-content:space-evenly;
+						text-align: center;
+						padding: 20px 0 40px 0;
+						width: 100%;
+						.top-row-item {
+							display:flex;
+							align-items:center;
+							justify-content:space-evenly;
+							text-align: center;
+							column-gap: 10px;
+							img {
+								// padding: 5px 10px 0 0;
+							}
+							a {
+								font-size: 18px;
+								text-transform: uppercase;
+								color: $pale-green;
+								
+								&:hover {
+									color: $fern;
+									transition-duration: 300ms;
+								}
+							}
+						}
+					}
+				}
+				.bottom-row {
+					background-color: $catskill;
+					.column {
+						padding: 10px 30px;
+						a {
+							.bottom-row-item {
+								display:flex;
+								align-items:center;
+								justify-content:space-between;
+								width: 100%;
+								padding: 10px 0;
+								
+								&:hover {
+									background-color: $white;
+									transition-duration: 300ms;
+								}
+								
+								.left {
+									display:flex;
+									align-items:center;
+									justify-content:flex-start;
+									column-gap: 20px;
+									padding: 0 0 0 60px;
+									text-transform: uppercase;
+									font-weight: 700;
+									img {
+										width: 50px;
+										height: auto;
+									}
+								}
+								.right {
+									padding: 0 60px 0 0;
+									font-size: 30px;
+								}
+							}
+						}
+					}					
+				}
+				
+			}
+		}
+	}
+}

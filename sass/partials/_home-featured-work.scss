@@ -1,0 +1,153 @@
+
+.home-featured-work {
+	padding: 60px 0;
+		
+	.column {
+		position: relative;
+		height: 400px;
+		width: 100%;
+	
+		.image {
+			img {
+				margin: 0;
+				padding: 0;
+				height: 400px;
+				width: 100%;
+			}
+			
+			.corners {
+				border-radius: 20px;
+			}
+			
+		}
+		
+		.content {
+			position: absolute;
+			top: 25%;
+			bottom: 25%;
+			left: 50px;
+			right: 50px;
+			
+			.intro {
+				font-family: 'Gotham Book';
+				font-size: 14px;
+				text-transform: uppercase;
+				color: $caribbean-green;
+			}
+			
+			.headline {
+				width: 90%;
+				font-family: 'Gotham Bold';
+				font-size: 24px;
+				line-height: 1.2em;
+				color: $white;
+			}
+			
+			.see-what {
+				width: 90%;
+				font-family: 'Gotham Medium';
+				font-size: 16px;
+				line-height: 1.2em;
+				text-transform: uppercase;
+				color: $mindaro;
+				
+				i {
+					padding: 0 0 0 20px;
+				}
+				
+			}
+			
+		}
+		
+		.rollover {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: rgba(255, 255, 255, .8);
+			color: #fff;
+			visibility: hidden;
+			opacity: 0;
+			transition: opacity .2s, visibility .2s;
+			
+			.eye {
+				font-size: 100px;
+				color: $caribbean-green;
+			}
+			
+		}
+		
+		.corners {
+			border-radius: 20px;
+		}
+		
+	}
+			
+	.column:hover .rollover {
+		visibility: visible;
+		opacity: 1;
+		transition-duration: 300ms;
+	}
+
+	
+}
+
+
+@media only screen and ( max-width: 1200px ) {
+	.home-featured-work {
+		padding: 0;
+		
+		.wrapper {
+			margin: 0;
+			width: 100%;
+			max-width: 100%;
+			
+			.column {
+				height: auto;
+			
+				.image {
+					img {
+						height: 435px;
+					}
+					
+					.corners {
+						border-radius: 0px;
+					}
+					
+				}
+				
+				.content {
+					position: absolute;
+					top: 30%;
+					left: 50px;
+					right: 50px;
+					
+					.headline {
+						width: 90%;
+						font-size: 20px;
+					}
+					
+					.see-what {
+						font-size: 18px;
+						
+						i {
+							padding: 0 0 0 10px;
+						}
+						
+					}
+					
+				}
+				
+				.corners {
+					border-radius: 0px;
+				}
+				
+			}
+		}
+		
+	}
+}

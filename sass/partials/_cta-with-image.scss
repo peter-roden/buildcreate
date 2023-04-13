@@ -1,0 +1,282 @@
+
+.cta-with-image {
+	
+	.theme {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+			"left right";
+		align-items: center;
+		gap: 60px;
+		position: relative;
+		padding: 60px 0;
+		height: 480px;
+		width: 100%;
+		
+		.left {
+			grid-area: left;
+			.background-image {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+		}
+		
+		.right {
+			grid-area: right;
+			.background-image {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+		}
+		
+		.text-location {
+			margin: 0 0 0 30%;
+			width: 100%;
+			position: relative;
+		}
+		
+		.headline {
+			padding: 0 0 10px 0;
+			p {
+				font-family: 'Gotham Bold';
+				font-size: 14px;
+				text-transform: uppercase;
+			}
+		}
+		
+		.text {
+			padding: 0 0 10px 0;
+			p {
+				font-family: 'Surveyor Bold';
+				font-size: 40px;
+				line-height: 1.1em;
+			}
+		}
+		
+		.button {
+			padding: 60px 0;
+			a {
+				font-family: 'Gotham Condensed Bold';
+				font-size: 24px;
+				letter-spacing: 1.5px;
+				text-transform: uppercase;
+				border-radius: 48px;
+				padding: 20px 60px;
+				
+				&:hover {
+					transition-duration: 300ms;
+				}
+			}
+		}
+		
+	}
+	
+}
+
+
+
+.cta-with-image-theme-blue-stone {
+	background-color: $blue-stone;
+}
+.cta-with-image-theme-caribbean-green {
+	background-color: $caribbean-green;
+}
+.cta-with-image-theme-gondola {
+	background-color: $gondola;
+}
+.cta-with-image-theme-fern {
+	background-color: $fern;
+}
+.cta-with-image-theme-mint {
+	background-color: $mint;
+}
+.cta-with-image-theme-pale-green {
+	background-color: $pale-green;
+}
+.cta-with-image-theme-iris {
+	background-color: $iris;
+}
+.cta-with-image-theme-mindaro {
+	background-color: $mindaro;
+}
+.cta-with-image-theme-catskill {
+	background-color: $catskill;
+}
+.cta-with-image-theme-white {
+	background-color: $white;
+}
+
+.row-with-image-theme-blue-stone {
+	.headline {
+		p {
+			color: $caribbean-green;
+		}
+	}
+	.text {
+		p {
+			color: $white;
+		}
+	}
+	.button {
+		a {
+			background-color: $white;
+			color: $fern;
+			
+			&:hover {
+				background-color: $fern;
+				color: $white;
+				transition-delay: 300ms;
+			}
+		}
+	}	
+}
+
+.row-with-image-theme-caribbean-green,
+.row-with-image-theme-gondola,
+.row-with-image-theme-mint,
+.row-with-image-theme-pale-green,
+.row-with-image-theme-pale-iris,
+.row-with-image-theme-pale-mindaro {
+	.headline {
+		p {
+			color: $fern;
+		}
+	}
+	.text {
+		p {
+			color: $white;
+		}
+	}
+	.button {
+		a {
+			background-color: $white;
+			color: $fern;
+			
+			&:hover {
+				background-color: $blue-stone;
+				color: $white;
+				transition-delay: 300ms;
+			}
+		}
+	}	
+}
+
+.row-with-image-theme-fern {
+	.headline {
+		p {
+			color: $iris;
+		}
+	}
+	.text {
+		p {
+			color: $white;
+		}
+	}
+	.button {
+		a {
+			background-color: $white;
+			color: $fern;
+			
+			&:hover {
+				background-color: $blue-stone;
+				color: $white;
+				transition-delay: 300ms;
+			}
+		}
+	}	
+}
+
+
+.row-with-image-theme-catskill,
+.row-with-image-theme-white {
+	.headline {
+		p {
+			color: $fern;
+		}
+	}
+	.text {
+		p {
+			color: $black;
+		}
+	}
+	.button {
+		a {
+			background-color: $fern;
+			color: $white;
+			
+			&:hover {
+				background-color: $blue-stone;
+				color: $white;
+				transition-delay: 300ms;
+			}
+		}
+	}	
+}
+
+@media only screen and ( max-width: 800px ) {
+	.cta-with-image {
+		
+		.theme {
+			grid-template-columns: 1fr;
+			align-items: start;
+			grid-template-areas: 
+				"image" 
+				"text";
+			position: relative;	
+			padding: 0 0 100px 0;
+				
+			.image-location {
+				grid-area: image;
+				
+				.background-image  {
+					text-align: center;
+					position: relative;
+					img {
+						bottom: 30px;
+						width: 100%;
+						height: auto;	
+					}
+				}
+				
+			}
+			
+			.text-location {
+				grid-area: text;
+				width: 80%;
+				bottom: 60%;
+				margin: 0;
+				padding: 60px 40px;
+			}
+			
+			.text-device-type {
+				position: absolute;
+				top: -120%;
+			}
+			
+			.headline {
+				text-align: center;
+			}
+			
+			.text {
+				text-align: center;
+				p {
+					font-size: 30px;
+				}
+			}
+			
+			.button {
+				width: 100%;
+				padding: 0 0 60px 0;
+				a {
+					text-align: center;
+					display: block;
+					width: 100%;
+					padding: 15px 0;
+				}
+			}
+		}
+		
+	}	
+}

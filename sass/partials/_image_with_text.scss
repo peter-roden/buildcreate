@@ -1,0 +1,230 @@
+
+.image-with-text {
+	
+	.theme {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+			"left right";
+		align-items: center;
+		gap: 60px;
+		position: relative;
+		padding: 60px 0;
+		
+		.left {
+			grid-area: left;
+		}
+		
+		.right {
+			grid-area: right;
+		}
+		
+		.text-location {
+
+			.headline {
+				p {
+					font-family: 'Surveyor Bold';
+					font-size: 40px;
+					line-height: 1.1em;
+				}
+			}
+			
+			.text {
+				p {
+					font-family: 'Gotham Book';
+					font-size: 16px;
+				}
+				strong {
+					font-family: 'Gotham Bold';
+				}
+			}
+			
+		}
+		
+		.background-image {
+			img {
+				width: 100%;
+				height: auto;
+			}
+			.image-corners {
+				border-radius: 30px;
+			}
+		}
+		
+	}
+	.image-bottom {
+		place-items: end;
+		padding: 60px 0 0 0;
+		column-gap: 60px;
+		row-gap: 0;		
+		
+		.text-location {
+			.headline {
+				margin: -140% 0 0 0;	
+			}
+		}
+
+	}
+	
+}
+
+.single-work {
+	
+	.image-with-text {
+		
+		.image-left {
+			grid-template-columns: 7fr 3fr;
+		}
+		
+		.image-right {
+			grid-template-columns: 3fr 7fr;
+		}
+		
+	}
+
+}
+
+.image-with-text-blue-stone {
+	background-color: $blue-stone;
+}
+.image-with-text-caribbean-green {
+	background-color: $caribbean-green;
+}
+.image-with-text-gondola {
+	background-color: $gondola;
+}
+.image-with-text-fern {
+	background-color: $fern;
+}
+.image-with-text-mint {
+	background-color: $mint;
+}
+.image-with-text-pale-green {
+	background-color: $pale-green;
+}
+.image-with-text-iris {
+	background-color: $iris;
+}
+.image-with-text-mindaro {
+	background-color: $mindaro;
+}
+.image-with-text-catskill {
+	background-color: $catskill;
+}
+.image-with-text-white {
+	background-color: $white;
+}
+
+.image-with-text-blue-stone,
+.image-with-text-caribbean-green,
+.image-with-text-gondola,
+.image-with-text-fern  {
+	
+	.headline {
+		color: $white;
+	}
+	
+	.text {
+		color: $white;
+	}
+	
+}
+
+.image-with-text-mint, 
+.image-with-text-pale-green,
+.image-with-text-iris, 
+.image-with-text-mindaro,
+.image-with-text-catskill, 
+.image-with-text-white {
+	
+	.headline {
+		color: $black;
+	}
+	
+	.text {
+		color: $black;
+	}
+	
+}
+
+@media only screen and ( max-width: 800px ) {
+	.image-with-text {
+		
+		.theme {
+			grid-template-columns: 1fr;
+			align-items: start;
+			grid-template-areas: 
+				"image" 
+				"text";
+			position: relative;
+				
+			.image-location {
+				grid-area: image;
+				
+				.image-type  {
+					text-align: center;
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+				
+			}
+			
+			.text-location{
+				grid-area: text;
+				
+				.headline {
+					text-align: center;
+					font-size: 30px;
+				}
+			}
+			
+		}
+		
+		
+		.image-bottom {
+			align-items: center;
+			gap: 60px;
+			position: relative;
+			padding: 60px 0;	
+			
+			.text-location {
+				.headline {
+					margin: 0;	
+				}
+			}
+		
+		}
+		
+	}
+	
+	.single-work {
+		
+		.image-with-text {
+			
+			.image-left {
+				grid-template-columns: 1fr;
+			}
+			
+			.image-right {
+				grid-template-columns: 1fr;
+			}
+			
+			.theme {
+				
+				.text-location{
+					
+					.headline {
+						font-size: 22px;
+					}
+				}
+				
+			}
+
+			
+		}
+	
+	}
+		
+}

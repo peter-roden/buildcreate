@@ -1,0 +1,425 @@
+.single-staff {
+	
+	.mobile {
+		display: none;
+	}
+	
+	.single-staff-container {
+		display: grid;
+		grid-template-columns: 5fr 2fr;
+		column-gap: 60px;
+		row-gap: 30px;
+		padding: 120px 0 0 0;
+		
+		.left {
+		
+			.content {
+				display: grid;
+				grid-template-columns: 1fr 4fr;
+				column-gap: 30px;
+				row-gap: 30px;
+				
+				.image {
+					img {
+						height: 180px;
+						width: 180px;
+						border-radius: 50%;
+					}
+				}
+				
+				.text {
+					padding: 40px 0 0 0;
+					
+					.name {
+						font-family: 'Gotham Bold';
+						font-size: 24px;
+						color: $black;
+						
+						.first-name {
+							padding: 0 7px 0 0;
+						}
+						
+						.last-name {
+							text-transform: uppercase;
+						}
+						
+					}
+					
+					.title {
+						font-family: 'Surveyor Light';
+						font-size: 20px;
+						color: $caribbean-green;
+					}
+					
+					.bio {
+						padding: 30px 0 0 0;
+						p {
+							font-family: 'Surveyor Light';
+							font-size: 16px;
+							color: $black;
+						}
+					}
+					
+				}
+				
+			}
+						
+			.quote-container {
+				display: grid;
+				grid-template-columns: 1fr 12fr;
+				column-gap: 30px;
+				row-gap: 30px;
+				padding: 60px 0;
+				
+				.icon {
+					font-size: 62px;
+					color: $pale-green;
+				}
+				
+				.quote {
+					p {
+						font-family: 'Surveyor Bold Italic';
+						font-size: 30px;
+						color: $black;
+					}
+				}
+			}
+			
+		}
+		
+		.right {
+			margin: 50px 0 0 0;
+			
+			.back {
+				font-family: 'Gotham Book';
+				color: $fern;
+				
+				i {
+					padding: 0 15px 0 0;
+				}
+				
+				&:hover {
+					text-decoration: underline;
+					transition-duration: 300ms;
+				}
+			}
+			
+			.education-container {
+				padding: 60px 0;
+				
+				.label {
+					font-family: 'Gotham Bold';
+					font-size: 20px;
+					color: $mint;
+					padding: 0 0 15px 0;
+				}
+				
+				.school-container {
+					padding: 0 0 15px 0;
+					
+					.major {
+						font-family: 'Gotham Medium Italic';
+						font-size: 16px;
+						color: $black;
+					}
+					
+					.school {
+						font-family: 'Gotham Light';
+						font-size: 16px;
+						color: $black; 
+					}
+					
+				}
+				
+			}
+				
+			.expertise-container {
+				padding: 0 0 60px 0;
+				
+				.label {
+					font-family: 'Gotham Bold';
+					font-size: 20px;
+					color: $mint;
+					padding: 0 0 15px 0;
+					color: $mint;
+				}
+				
+				ul.fa-ul {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					column-gap: 30px;
+					
+					li {
+						font-family: 'Gotham Light';
+						
+						i {
+							color: $fern;
+						}
+					}
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+@media only screen and ( max-width: 1100px ) {
+	
+	.single-staff {
+		
+		.desktop {
+			display: none !important;
+		}
+		
+		.mobile {
+			display: block;
+		}
+		
+		.wrapper {
+			margin: 0;
+			width: 100%;
+			max-width: 100%;
+			
+			.back {
+				text-align: center;
+				color: $fern;
+				
+				i {
+					padding: 0 15px 0 0;
+				}
+				
+				&:hover {
+					text-decoration: underline;
+					transition-duration: 300ms;
+				}
+			}
+		
+			.single-staff-container {
+				grid-template-columns: 1fr;
+				padding: 120px 60px 30px 60px;
+				
+				.left {
+					text-align: center;
+					
+					.content {
+						grid-template-columns: 1fr;
+						
+						.image {
+							width: 100%;
+							img {
+								display: block;
+								width: 100%;
+								height: 100%;
+							}
+						}
+						
+						.text {
+							padding: 20px 0 0 0;
+							
+							.bio {
+								text-align: left;
+							}
+							
+						}
+						
+					}
+					
+					.quote-container {
+						display: block;
+						padding: 30px 0 0 0;
+						position: relative;
+						
+						.icon {
+							position: absolute;
+							top: 20px;
+							font-size: 62px;
+							color: $pale-green;
+							z-index: 1;
+						}
+						
+						.quote {
+							position: relative;
+							text-align: left;
+							font-family: 'Surveyor';
+							font-size: 30px;
+							line-height: 1.1em;
+							font-weight: 600;
+							font-style: italic;
+							color: $black;
+							z-index: 10000;
+							padding: 0 0 0 30px;
+						}
+					}
+					
+				}
+				
+				.right {
+					margin: 0;
+					
+					.education-container {
+						padding: 0 0 30px 0;
+					}
+						
+					.expertise-container {
+						padding: 0 0 30px 0;
+						
+						.label {
+							font-size: 20px;
+							font-weight: 600;
+							color: $mint;
+							padding: 0 0 15px 0;
+						}
+						
+						ul.fa-ul {
+							margin: 0;
+							padding: 0 0 0 5px;
+							grid-template-columns: 1fr;
+							
+							li {
+								padding: 0 0 10px 15px;
+								
+								&:before {
+									display: none !important;
+								}
+								
+								span {
+									left: -15px;
+																		
+									i {
+										color: $fern;
+									}
+								}
+							}
+	
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+.articles-by {
+	padding: 0 60px 60px 60px;
+	
+	.top {
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid $mint;
+		padding: 30px 0 0 0;
+		margin: 30px 0 0 0;
+	
+		.by {
+			font-family: 'Gotham Bold';
+			font-size: 24px;
+			text-transform: uppercase;
+			padding: 0 0 40px 0;
+			color: $black;
+		}
+		
+		a {
+			font-family: 'Gotham Book';
+			color: $fern;
+			text-decoration: underline;
+			
+			&:hover {
+				text-decoration: none;
+				transition-duration: 300ms;
+			}
+		}
+
+	}
+	
+	.post-containers {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 60px;
+		row-gap: 30px;
+		
+		.post-container {
+			
+			.title {
+				font-family: 'Surveyor Book';
+				font-size: 24px;
+				color: $fern;
+				
+				&:hover {
+					text-decoration: underline;
+					transition-duration: 300ms;
+				}
+			}
+			
+			.meta {
+				display: flex;
+				justify-content: flex-start;
+				padding: 10px 0;
+				
+				.date {
+					font-family: 'Surveyor Book';
+					font-size: 13px;
+					padding: 0 20px 0 0
+				}
+				
+				.category {
+					padding: 0 10px 0 0;
+					
+					a {
+						font-family: 'Surveyor';
+						font-size: 13px;
+						text-decoration: underline;
+						color: $blue-stone;
+						
+						&:hover {
+							text-decoration: none;
+							transition-duration: 300ms;
+						}
+					}
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+@media only screen and ( max-width: 1100px ) {
+
+	.articles-by {
+			
+		.post-containers {
+			grid-template-columns: 1fr;
+			
+			.post-container {
+				.meta {
+					padding: 10px 0 0 0;
+				}
+			}
+		}
+		
+		a {
+			padding: 30px 0;
+			color: $fern;
+			
+			&:hover {
+				text-decoration: underline;
+				transition-duration: 300ms;
+			}
+		}
+				
+	}
+
+}
+

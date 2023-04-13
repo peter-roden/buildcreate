@@ -1,0 +1,74 @@
+
+.hero-home {
+	display: flex;
+	align-items: center;
+	height: 130vh;
+	width: 100%;
+	margin: -100px 0 0 0;
+	
+	.content {
+		.headline {
+			font-family: 'Surveyor Bold';
+			font-size: 50px;
+			max-width: 720px;
+		}
+		.intro {
+			font-family: 'Gotham Light';
+			max-width: 600px;
+		}
+		.button {
+			padding: 60px 0;
+			a {
+				font-family: 'Gotham Condensed Bold';
+				background-color: $fern;
+				color: $white;
+				font-size: 25px;
+				letter-spacing: 2.5px;
+				border-radius: 48px;
+				padding: 25px 60px;	
+				
+				&:hover {
+					background-color: $blue-stone;
+					color: $mindaro;
+					transition-duration: 300ms;
+				}
+				
+			}
+		}
+	}
+}
+
+@media only screen and ( max-width: 800px ) {
+	.hero-home {
+		display: flex;
+		align-items: center;
+		height: 120vh;
+		width: 100%;
+		margin: 0 0 0 0;
+		
+		.content {
+			text-align: center;
+			padding: 50vh 0 0 0;
+			.headline {
+				text-align: center;
+				padding: 0;
+				max-width: 100%;
+				width: 100%
+			}
+			.intro {
+				padding: 0;
+				max-width: 100%;
+				width: 100%;
+				font-weight: 200;
+			}
+			.button {
+				width: 100%;
+				a {
+					display: block;
+					width: 100%;
+					padding: 20px 0;
+				}
+			}
+		}
+	}	
+}

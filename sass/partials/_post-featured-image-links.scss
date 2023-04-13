@@ -1,0 +1,154 @@
+
+.post-featured-image-links {
+	padding: 60px 0;
+	
+	.headline {
+		font-family: 'Gotham';
+		font-size: 30px;
+		font-weight: 600;
+		text-transform: uppercase;
+		padding: 0 0 60px 0;
+	}
+	
+	.row {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 60px;
+		position: relative;
+		
+		.column {
+			position: relative;
+			height: 400px;
+			width: 100%;
+		
+			.image {
+				img {
+					margin: 0;
+					padding: 0;
+					height: 400px;
+					width: 100%;
+				}
+				
+				.corners {
+					border-radius: 20px;
+				}
+				
+			}
+			
+			.rollover {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: rgba(255, 255, 255, .8);
+				color: #fff;
+				visibility: hidden;
+				opacity: 0;
+				transition: opacity .2s, visibility .2s;
+				
+				.eye {
+					font-size: 100px;
+					color: $caribbean-green;
+				}
+				
+			}
+			
+			.corners {
+				border-radius: 20px;
+			}
+			
+		}
+				
+		.column:hover .rollover {
+			visibility: visible;
+			opacity: 1;
+			transition-duration: 300ms;
+		}
+
+	}
+	
+}
+
+
+
+.post-featured-image-links-blue-stone {
+	background-color: $blue-stone;
+}
+.post-featured-image-links-caribbean-green {
+	background-color: $caribbean-green;
+}
+.post-featured-image-links-gondola {
+	background-color: $gondola;
+}
+.post-featured-image-links-fern {
+	background-color: $fern;
+}
+.post-featured-image-links-mint {
+	background-color: $mint;
+}
+.post-featured-image-links-pale-green {
+	background-color: $pale-green;
+}
+.post-featured-image-links-iris {
+	background-color: $iris;
+}
+.post-featured-image-links-mindaro {
+	background-color: $mindaro;
+}
+.post-featured-image-links-catskill {
+	background-color: $catskill;
+}
+.post-featured-image-links-white {
+	background-color: $white;
+}
+
+.post-featured-image-links-blue-stone, 
+.post-featured-image-links-caribbean-green, 
+.post-featured-image-links-gondola,
+.post-featured-image-links-fern {
+	
+	.headline {
+		color: $white;
+	}
+	
+}
+
+.post-featured-image-links-mint, 
+.post-featured-image-links-pale-green, 
+.post-featured-image-links-iris, 
+.post-featured-image-links-mindaro, 
+.post-featured-image-links-catskill,
+.post-featured-image-links-white {
+	
+	.headline {
+		color: $black;
+	}
+	
+}
+
+
+@media only screen and ( max-width: 1200px ) {
+	.post-featured-image-links {
+		
+		.row {
+			grid-template-columns: 1fr;
+			
+			.column {
+				height: auto;
+			
+				.image {
+					img {
+						height: auto;
+					}
+					
+				}
+				
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,299 @@
+
+.industry-work-example {
+	
+	.theme {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+			"left right";
+		align-items: center;
+		column-gap: 60px;
+		position: relative;
+		padding: 60px 0 0 0;
+		
+		.left {
+			grid-area: left;
+		}
+		
+		.right {
+			grid-area: right;
+		}
+		
+		.text-location {
+			.case-study {
+				font-family: 'Gotham Book';
+				font-size: 14px;
+				padding: 0 0 10px 0;
+			}
+			
+			.headline {
+				p {
+					font-family: 'Surveyor Bold';
+					font-size: 30px;
+					line-height: 1.1em;
+				}
+			}
+			
+			.text {
+				font-family: 'Gotham Book';
+				font-size: 16px;
+				padding: 0 0 20px 0;
+			}
+			
+		}
+		
+		.image-location {
+			display: flex;
+			align-items: flex-end;
+			
+			.image {
+				img {
+					border-top-left-radius: 20px;
+					border-top-right-radius: 20px;
+				}
+				
+			}
+		}
+		
+		.columns {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			column-gap: 20px;
+			padding: 0 0 10px 0;
+			
+			.column {
+				ul.fa-ul {
+					font-family: 'Gotham Book';
+					font-size: 16px;
+					.skill {
+						font-family: 'Gotham Book';
+						font-size: 16px;
+					}
+				}
+			}
+		}
+		
+		.button {
+			padding: 60px 0;
+			a {
+				font-family: "Gotham Bold";
+				letter-spacing: 1.5px;
+				padding: 15px 40px;
+				border-radius: 30px;
+				color: $fern;
+				text-transform: uppercase;
+				
+				i {
+					padding: 0 0 0 10px;
+				}
+			}
+		}
+		
+	}
+	
+}
+
+.industry-work-example-blue-stone {
+	background-color: #015D53;
+}
+.industry-work-example-caribbean-green {
+	background-color: #07BAA6;
+}
+.industry-work-example-gondola {
+	background-color: #343434;
+}
+.industry-work-example-fern {
+	background-color: #57B750;
+}
+.industry-work-example-mint {
+	background-color: #91F4CE;
+}
+.industry-work-example-pale-green {
+	background-color: #B4FAC4;
+}
+.industry-work-example-iris {
+	background-color: #CAEDE8;
+}
+.industry-work-example-mindaro {
+	background-color: #D1EA6A;
+}
+.industry-work-example-catskill {
+	background-color: #EFF7F6;
+}
+.industry-work-example-white {
+	background-color: #FFFFFF;
+}
+
+.industry-work-example-blue-stone,
+.industry-work-example-caribbean-green,
+.industry-work-example-gondola {
+	
+	.case-study {
+		text-transform: uppercase;
+		color: $mindaro;
+	}
+	.headline {
+		color: $white;
+	}
+	.text {
+		color: $white;
+	}
+	.skill {
+		color: $mindaro;
+	}
+	
+	.theme {
+	
+		.button {
+			a {
+				border: 1px solid $white;
+				color: $white;
+				
+				&:hover {
+					background-color: $fern;
+					color: $white;
+					transition-duration: 300ms;
+				}
+			}
+		}
+		
+	}
+	
+}
+
+.industry-work-example-fern, 
+.industry-work-example-mint, 
+.industry-work-example-pale-green, 
+.industry-work-example-iris, 
+.industry-work-example-mindaro {
+	
+	.case-study {
+		text-transform: uppercase;
+		color: $fern;
+	}
+	.headline {
+		color: $fern;
+	}
+	.text {
+		color: $black;
+	}
+	.skill {
+		color: $black;
+	}
+	
+	.theme {
+		.button {
+			a {
+				border: 1px solid $fern;
+				color: $fern;
+	
+				&:hover {
+					background-color: $white;
+					transition-duration: 300ms;
+				}
+			}
+		}
+	}
+		
+}
+
+.industry-work-example-catskill,
+.industry-work-example-white {
+	
+	.case-study {
+		text-transform: uppercase;
+		color: $fern;
+	}
+	.headline {
+		color: $fern;
+	}
+	.text {
+		color: $black;
+	}
+	.skill {
+		color: $black;
+	}
+	
+	.theme {
+		.button {
+			a {
+				border: 1px solid $fern;
+				color: $fern;
+	
+				&:hover {
+					background-color: $fern;
+					color: $white;
+					transition-duration: 300ms;
+				}
+			}
+		}
+	}
+		
+}
+
+@media only screen and ( max-width: 800px ) {
+	.industry-work-example {
+		
+		.wrapper {
+			width: 100%;
+			max-width: 100%;
+			margin: 0;
+		}
+		
+		.theme {
+			margin: 0 auto;
+			padding: 0;
+			grid-template-columns: 1fr;
+			align-items: start;
+			grid-template-areas: 
+				"image" 
+				"text";
+			position: relative;
+				
+			.image-location {
+				grid-area: image;
+				display: block;
+
+				.image {
+					text-align: center;
+					img {
+						width: 100%;
+						height: auto;
+						border-radius: 20px;
+					}
+				}
+								
+			}
+			
+			.text-location{
+				grid-area: text;
+				padding: 60px 0 0 0;
+				width: 80%;
+				max-width: 80%;
+				margin: 0 auto;
+
+				.columns {
+					display: block;
+					padding: 0;
+					.column {
+						padding: 10px 0;
+					}
+				}
+				
+				.button {
+					width: 100%;
+					text-align: center;
+					padding: 60px 0;
+					a {
+						display: block;
+						width: 100%;
+						padding: 15px 0;
+					}
+				}
+				
+			}
+			
+		}
+		
+	}	
+}

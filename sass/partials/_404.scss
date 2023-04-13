@@ -1,0 +1,112 @@
+
+#not-found {	
+	background: rgba(87,183,80,1);
+	background: -moz-linear-gradient(45deg, rgba(87,183,80,1) 0%, rgba(104,214,113,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(87,183,80,1)), color-stop(100%, rgba(104,214,113,1)));
+	background: -webkit-linear-gradient(45deg, rgba(87,183,80,1) 0%, rgba(104,214,113,1) 100%);
+	background: -o-linear-gradient(45deg, rgba(87,183,80,1) 0%, rgba(104,214,113,1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(87,183,80,1) 0%, rgba(104,214,113,1) 100%);
+	background: linear-gradient(45deg, rgba(87,183,80,1) 0%, rgba(104,214,113,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57b750', endColorstr='#68d671', GradientType=1 );	
+
+		
+	.not-found-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+			"content image";
+		align-items: center;
+		gap: 60px;
+		position: relative;
+		padding: 120px 0 60px 0;
+		width: 100%;
+		
+		.image {
+			grid-area: image;
+		
+			.mobile-image {
+				display: none;
+			}
+			
+			.desktop-image {
+				text-align: right;
+			}
+			
+		}
+		
+		.content {
+			margin: 0 0 0 25%;
+			grid-area: content;
+		}
+		
+	}
+
+	.heading {
+		p {
+			font-family: 'Gotham Book';
+			font-size: 18px;
+			text-transform: uppercase;
+			color: $pale-green;
+		}
+	}
+	
+	.text {
+		p {
+			width: 100%;
+			font-family: 'Surveyor Bold';
+			font-size: 50px;
+			line-height: 1.1em;
+			color: $white;
+			
+			a {
+				color: $mindaro;
+				
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	
+}
+
+
+@media only screen and ( max-width: 1200px ) {
+	
+	#not-found {	
+			
+		.not-found-container {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-areas: 
+				"image"
+				"content";
+			
+			.image {
+				
+				.mobile-image {
+					display: none;
+				}
+				
+				.desktop-image {
+					display: none;
+				}
+				
+			}
+			
+			.content {
+				margin: 0;
+				padding: 0 60px;
+			}
+			
+		}
+		
+		.text {
+			p {
+				font-size: 30px;
+			}
+		}
+		
+	}
+
+}

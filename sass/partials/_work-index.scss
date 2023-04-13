@@ -1,0 +1,144 @@
+.work-index {
+	display: none;
+	
+	.work-index-container {
+		position: relative;
+		width: 100%;
+	
+		.image {
+			z-index: 1;	
+			img {
+				width: 100%;
+				height: auto;
+				border-radius: 30px;
+			}
+			
+			&:hover {
+				cursor: pointer;
+				// background: linear-gradient(275deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
+				-webkit-box-shadow: 0px 0px 33px -9px rgba(0,0,0,0.3);
+				-moz-box-shadow: 0px 0px 33px -9px rgba(0,0,0,0.3);
+				box-shadow: 0px 0px 33px -9px rgba(0,0,0,0.3);
+				border-radius: 30px;
+				transition-duration: 300ms;
+			}
+		}
+			
+		.rollover {
+			display: none;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			border-radius: 30px;
+			z-index: 1000;
+			height: 86%;
+			width: 87.5%;
+			background-color: $white;
+			padding: 40px;
+			opacity: .9;
+			cursor: pointer;
+			transition-duration: 300ms;
+			
+			.rollover-container {
+				padding: 40% 0 0 0;
+					
+				.heading {
+					font-family: 'Gotham Bold';
+					font-size: 40px;
+					color: $black;
+					line-height: 1.1em;
+					width: 80%;
+					
+					&:hover {
+						color: $fern;
+					}
+				}
+				
+				.columns {
+					display: flex;
+					justify-content: flex-start;
+					padding: 20px 0 0 0;
+					column-gap: 60px;
+					
+					.column {
+						.heading {
+							width: 160px;
+							text-transform: uppercase;
+							font-size: 20px;
+							font-weight: 700;
+						}
+						.text {
+							font-family: 'Gotham Book';
+							font-size: 12px;
+							display: flex;
+							flex-direction: row;
+							justify-content: flex-start;
+							column-gap: 10px;
+							
+							p {
+								padding: 0;
+							}
+						}
+					}
+					
+				}
+					
+				.link {
+					padding: 20px 0 30px 0;
+					z-index: 2000;
+					width: 100%;
+					text-align: left;
+					
+					a {
+						font-family: 'Gotham Bold';
+						font-size: 19px;
+						text-transform: uppercase;
+						color: $fern;
+						
+						i {
+							padding: 0 0 0 20px;
+						}
+						
+						&:hover {
+							color: $black;
+							transition-duration: 300ms;
+						}
+					}
+				}
+				
+			}
+			
+		}
+		
+	}
+}
+
+@media only screen and ( max-width: 1300px ) {
+	
+	.work-index {
+		display: none;
+
+		.work-index-container {
+				
+			.rollover {
+				bottom: 0;
+				left: 0;
+				
+				.rollover-container {
+					padding: 10% 0 0 0;
+				
+					.heading {
+						font-size: 30px;
+					}
+					
+					.columns {
+						column-gap: 20px;
+					}
+					
+				}
+				
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,78 @@
+
+.hero-minimal {	
+	display: flex;
+	align-items: center;
+	height: 675px;	
+	
+	.name {
+		p {
+			font-family: 'Gotham Book';
+			font-size: 18px;
+			text-transform: uppercase;
+			color: $pale-green;
+		}
+	}
+	
+	.text {
+		width: 60%;
+		p {
+			width: 100%;
+			font-family: 'Surveyor Bold';
+			font-size: 50px;
+			line-height: 1.1em;
+			color: $white;
+		}
+	}
+	
+}
+
+.hero-minimal-blue-stone {
+	background-color: $blue-stone;
+}
+.hero-minimal-caribbean-green {
+	background-color: $caribbean-green;
+}
+.hero-minimal-gondola {
+	background-color: $gondola;
+}
+.hero-minimal-fern {
+	background-color: $fern;
+}
+.hero-minimal-mint {
+	background-color: $mint;
+}
+.hero-minimal-pale-green {
+	background-color: $pale-green;
+}
+.hero-minimal-iris {
+	background-color: $iris;
+}
+.hero-minimal-mindaro {
+	background-color: $mindaro;
+}
+.hero-minimal-catskill {
+	background-color: $catskill;
+}
+.hero-minimal-white {
+	background-color: $white;
+}
+
+@media only screen and ( max-width: 800px ) {
+	
+	.hero-minimal {
+		height: 70vh;
+		
+		.name {
+			text-transform: uppercase;
+		}
+		
+		.text {
+			width: 100%;
+			p {
+				font-size: 32px;
+				line-height: 1.1em;
+			}
+		}
+		
+	}
+}

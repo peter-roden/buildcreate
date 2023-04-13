@@ -1,0 +1,77 @@
+
+.book-meeting {
+	margin: 60px 0;
+	
+	.wrapper {
+					
+		.headline {
+			font-family: 'Surveyor Bold';
+			font-size: 40px;
+			line-height: 1.1em;
+			p {
+				color: $fern;
+			}
+		}
+		
+		.text {
+			p {
+				font-family: 'Gotham Book';
+				
+				strong {
+					font-family: 'Gotham Bold';
+				}
+			}
+		}
+		
+		.link {
+			padding: 30px 0 0 0;
+			a {
+				font-family: 'Gotham Condensed Bold';
+				background-color: $fern;
+				font-size: 21px;
+				letter-spacing: 2px;
+				color: $white;
+				text-transform: uppercase;
+				border-radius: 48px;
+				padding: 15px 60px;
+				
+				&:hover {
+					background-color: $blue-stone;
+					color: $mindaro;
+					transition-duration: 300ms;
+				}
+			}
+		}
+		
+	}
+	
+}
+
+@media only screen and ( max-width: 800px ) {
+	.book-meeting{
+		margin: 60px 60px 0 60px;
+		
+		.wrapper {
+			margin: 0;
+			width: 100%;
+			max-width: 100%;
+			
+			.headline {
+				p {
+					font-size: 30px;
+				}
+			}
+				
+			.link {
+				text-align: center;
+				width: 100%;
+				a {
+					display: block;
+					width: 100%;
+					font-size: 20px;
+					padding: 15px 0;
+				}
+			}
+		}
+	}
+}
